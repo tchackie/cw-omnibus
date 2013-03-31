@@ -1,0 +1,10 @@
+INDEX VERSION 1.126+/Users/Daniel/Documents/GitHub/tchackie/cw-omnibus/.metadata/.plugins/org.eclipse.jdt.core
+2954106840.index
+809795788.index
+10670679.index
+1634520994.index
+2617468290.index
+3701908332.index
+329553092.index
+3015588251.index
+1415693123.index

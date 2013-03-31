@@ -14,34 +14,47 @@
 
 package com.commonsware.android.mapsv2.popups;
 
+import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
 import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
 import com.google.android.gms.maps.model.Marker;
 
 class PopupAdapter implements InfoWindowAdapter {
-  LayoutInflater inflater=null;
+	LayoutInflater inflater = null;
+	Context context = null;
 
-  PopupAdapter(LayoutInflater inflater) {
-    this.inflater=inflater;
-  }
+	PopupAdapter(LayoutInflater inflater, Context context) {
+		this.inflater = inflater;
+		this.context = context;
+	}
 
-  @Override
-  public View getInfoWindow(Marker marker) {
-    return(null);
-  }
+	@Override
+	public View getInfoWindow(Marker marker) {
+		return (null);
+	}
 
-  @Override
-  public View getInfoContents(Marker marker) {
-    View popup=inflater.inflate(R.layout.popup, null);
+	@Override
+	public View getInfoContents(Marker marker) {
+		View popup = inflater.inflate(R.layout.popup, null);
 
-    TextView tv=(TextView)popup.findViewById(R.id.title);
+		TextView tv = (TextView) popup.findViewById(R.id.title);
 
-    tv.setText(marker.getTitle());
-    tv=(TextView)popup.findViewById(R.id.snippet);
-    tv.setText(marker.getSnippet());
+		tv.setText(marker.getTitle());
+		Typeface tf = Typeface.createFromAsset(context.getAssets(),
+				"FrizQuaT.ttf");
+		tv.setTypeface(tf);
+		tv = (TextView) popup.findViewById(R.id.snippet);
 
-    return(popup);
-  }
+		Typeface ttf = Typeface.createFromAsset(context.getAssets(),
+				"shifty.ttf");
+
+		tv.setText(marker.getSnippet());
+		tv.setTypeface(ttf);
+
+		return (popup);
+	}
 }

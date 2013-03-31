@@ -1,0 +1,58 @@
+!SESSION 2013-03-31 18:06:55.183 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_43
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/Daniel/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/Daniel/Documents/GitHub/tchackie/cw-omnibus -keyring /Users/Daniel/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-03-31 18:07:11.442
+!MESSAGE System property http.nonProxyHosts has been set to localhost|*.localhost|127.0.0.1|''|*.'' by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-31 18:07:18.143
+!MESSAGE An Android SDK is already being loaded. Please try again later.
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2013-03-31 18:07:46.801
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-03-31 18:08:37.354
+!MESSAGE Project facet jst.ejb has not been defined. It is used in plugin org.eclipse.jst.j2ee.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-31 18:09:01.133
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/MapsV2Popups/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1306)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-03-31 18:09:01.135
+!MESSAGE Resource '/MapsV2Popups/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-31 18:09:25.950
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/ActionBarSherlock/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1306)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-03-31 18:09:25.950
+!MESSAGE Resource '/ActionBarSherlock/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-31 18:10:00.302
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/google-play-services_lib/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1306)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-03-31 18:10:00.302
+!MESSAGE Resource '/google-play-services_lib/res' does not exist.
